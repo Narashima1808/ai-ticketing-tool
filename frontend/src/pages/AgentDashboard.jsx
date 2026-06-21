@@ -78,7 +78,7 @@ export default function AgentDashboard() {
   async function generateDraft(ticket) {
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/draft-response",
+        "https://ai-ticketing-tool.onrender.com/api/draft-response",
         {
           title: ticket.title,
           description: ticket.description,

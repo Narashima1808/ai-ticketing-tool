@@ -21,7 +21,7 @@ export default function NewTicket() {
       setLoadingAI(true);
 
       const response = await axios.post(
-        "http://localhost:5000/api/categorize",
+        "https://ai-ticketing-tool.onrender.com/api/categorize",
         {
           description: text,
         }
